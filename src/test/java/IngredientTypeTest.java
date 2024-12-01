@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThrows;
 public class IngredientTypeTest {
 
     @Test
-    public void testEnumContainsCorrectValues() {
+    public void testEnumValues() {
         // Проверяем, что перечисление содержит правильные значения
         assertEquals("SAUCE", IngredientType.SAUCE.name());
         assertEquals("FILLING", IngredientType.FILLING.name());
@@ -35,4 +35,9 @@ public class IngredientTypeTest {
         }
     }
 
+    @Test
+    public void testEnumContainsExpectedNumberOfValues() {
+        // Проверяем, что количество значений в перечислении соответствует ожиданиям
+        assertEquals("IngredientType should contain exactly 2 values.", 2, IngredientType.values().length);
+    }
 }

@@ -25,5 +25,6 @@ public class BunTest {
         // Проверяем цену
         Assert.assertEquals("The price of the bun should match the provided price.", price, bun.getPrice(), 0.0f);
     }
+
 }
 
