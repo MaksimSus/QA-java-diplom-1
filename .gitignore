@@ -6,3 +6,6 @@ target/
 *.lst
 *.txt
 *.exec
+
+!target/site/
+!target/site/jacoco/
