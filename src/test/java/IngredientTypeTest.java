@@ -34,4 +34,5 @@ public class IngredientTypeTest {
             assertNotNull(type);
         }
     }
+
 }
