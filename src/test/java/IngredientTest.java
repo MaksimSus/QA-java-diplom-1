@@ -6,7 +6,7 @@ import praktikum.IngredientType;
 public class IngredientTest {
 
     @Test
-    public void testConstructorAndGetName() {
+    public void testGetName() {
         // Подготовка данных
         String name = "Сыр";
         float price = 2.0f;
@@ -14,11 +14,11 @@ public class IngredientTest {
         // Создаем объект ингредиента
         Ingredient ingredient = new Ingredient(type, name, price);
         // Проверяем название
-        Assert.assertEquals("Название ингредиента должно совпадать с указанным.", name, ingredient.getName());
+        Assert.assertEquals("The ingredient name should match the specified one.", name, ingredient.getName());
     }
 
     @Test
-    public void testConstructorAndGetPrice() {
+    public void testGetPrice() {
         // Подготовка данных
         String name = "Сыр";
         float price = 2.0f;
@@ -26,11 +26,11 @@ public class IngredientTest {
         // Создаем объект ингредиента
         Ingredient ingredient = new Ingredient(type, name, price);
         // Проверяем цену
-        Assert.assertEquals("Цена ингредиента должна совпадать с указанной.", price, ingredient.getPrice(), 0.0f);
+        Assert.assertEquals("The ingredient price should match the specified one.", price, ingredient.getPrice(), 0.0f);
     }
 
     @Test
-    public void testConstructorAndGetType() {
+    public void testGetType() {
         // Подготовка данных
         String name = "Сыр";
         float price = 2.0f;
@@ -38,7 +38,7 @@ public class IngredientTest {
         // Создаем объект ингредиента
         Ingredient ingredient = new Ingredient(type, name, price);
         // Проверяем тип
-        Assert.assertEquals("Тип ингредиента должен совпадать с указанным.", type, ingredient.getType());
+        Assert.assertEquals("The ingredient type should match the specified one.", type, ingredient.getType());
     }
 }
 
