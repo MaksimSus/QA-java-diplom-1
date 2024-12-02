@@ -1,4 +1,9 @@
 .idea/
+
+!target/site/
+!target/site/jacoco/
+!target/site/jacoco/**
+
 target/
 
 *.class
@@ -7,5 +12,3 @@ target/
 *.txt
 *.exec
 
-!target/site/
-!target/site/jacoco/

@@ -108,7 +108,7 @@ public class BurgerTest {
 
     @Test
     public void testMoveIngredient() {
-        // Добавляем ингредиенты
+        // Добавляем ингредиенты и перемещаем
         burger.addIngredient(mockIngredient1);
         burger.addIngredient(mockIngredient2);
         burger.addIngredient(mockIngredient3);
@@ -167,6 +167,7 @@ public class BurgerTest {
 
     @Test
     public void testAddMultipleIngredients() {
+        // Проверяем соответствие количесва ингредиентов
         burger.addIngredient(mockIngredient1);
         burger.addIngredient(mockIngredient2);
         assertEquals(2, burger.ingredients.size());
@@ -174,6 +175,7 @@ public class BurgerTest {
 
     @Test
     public void testGetPriceWithNoBunAndIngredients() {
+        // Проверяем подсчет с нулевой стоимостью всего
         burger.setBuns(mockBun); // Устанавливаем булку
         Mockito.when(mockBun.getPrice()).thenReturn(0f); // Указываем, что её цена = 0
         assertEquals(0.0f, burger.getPrice(), 0.0);

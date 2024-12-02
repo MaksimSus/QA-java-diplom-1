@@ -52,6 +52,7 @@ public class IngredientTest {
         // Проверяем тип
         Assert.assertEquals("The ingredient type should match the specified one.", type, ingredient.getType());
     }
+
 }
 
 

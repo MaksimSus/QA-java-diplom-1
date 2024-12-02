@@ -6,18 +6,18 @@ public class BunTest {
 
     @Test
     public void testConstructorAndGetName() {
-        // Подготовка данных
+        // Проверяем соответствие названия указанному при сборке
         String name = "С кунжутом";
         float price = 1.5f;
         // Создаем объект булочки
         Bun bun = new Bun(name, price);
         // Проверяем название
-        Assert.assertEquals("The price of the bun should match the provided price.", name, bun.getName());
+        Assert.assertEquals("The price of the bun should match the provided name.", name, bun.getName());
     }
 
     @Test
     public void testConstructorAndGetPrice() {
-        // Подготовка данных
+        // Проверяем соответствие цены указанной при сборке
         String name = "С кунжутом";
         float price = 1.5f;
         // Создаем объект булочки
