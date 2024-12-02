@@ -1,0 +1,14 @@
+.idea/
+
+!target/site/
+!target/site/jacoco/
+!target/site/jacoco/**
+
+target/
+
+*.class
+*.xml
+*.lst
+*.txt
+*.exec
+
